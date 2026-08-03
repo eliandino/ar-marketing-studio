@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AR Marketing Studio</title>
+
+    <meta name="description" content="Create, preview, and place marketing ideas in Augmented Reality.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+         LOADER
+    ============================ -->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <h1>AR</h1>
+
+        </div>
+
+        <p>Loading Marketing Studio...</p>
+
+    </div>
+
+
+
+    <!-- ===========================
+         APP
+    ============================ -->
+
+    <div id="app">
+
+        <!-- Sidebar -->
+
+        <aside id="sidebar">
+
+            <div class="logo">
+
+                <h2>AR Studio</h2>
+
+            </div>
+
+            <nav>
+
+                <button class="menu-btn active">
+                    Dashboard
+                </button>
+
+                <button class="menu-btn">
+                    Projects
+                </button>
+
+                <button class="menu-btn">
+                    Assets
+                </button>
+
+                <button class="menu-btn">
+                    AI Designer
+                </button>
+
+                <button class="menu-btn">
+                    AR Camera
+                </button>
+
+                <button class="menu-btn">
+                    Settings
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- Main -->
+
+        <main id="main-content">
+
+            <!-- Header -->
+
+            <header>
+
+                <div>
+
+                    <h1>
+                        AR Marketing Studio
+                    </h1>
+
+                    <p>
+                        Design marketing experiences in Augmented Reality.
+                    </p>
+
+                </div>
+
+                <button id="newProject">
+
+                    New Project
+
+                </button>
+
+            </header>
+
+
+
+            <!-- Dashboard -->
+
+            <section id="dashboard">
+
+                <div class="card">
+
+                    <h3>Recent Projects</h3>
+
+                    <p>No projects yet.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>AI Assistant</h3>
+
+                    <p>Ready to generate ideas.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>AR Scene</h3>
+
+                    <p>Not loaded.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Assets</h3>
+
+                    <p>0 Models</p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Workspace -->
+
+            <section id="workspace">
+
+                <div id="viewport">
+
+                    <h2>
+
+                        3D Viewport
+
+                    </h2>
+
+                    <p>
+
+                        Three.js Scene will appear here.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- Main JavaScript -->
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
