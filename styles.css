@@ -1,0 +1,246 @@
+/*==================================================
+ AR MARKETING STUDIO
+ Version 0.1
+ styles.css
+==================================================*/
+
+/*==============================
+ RESET
+==============================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:#0b0f18;
+
+    color:#f2f5fa;
+
+    overflow:hidden;
+
+}
+
+
+/*==============================
+ VARIABLES
+==============================*/
+
+:root{
+
+    --bg:#0b0f18;
+
+    --bg2:#121827;
+
+    --panel:#181f31;
+
+    --panel2:#202941;
+
+    --line:#2d3753;
+
+    --accent:#3b82f6;
+
+    --accent2:#60a5fa;
+
+    --success:#22c55e;
+
+    --danger:#ef4444;
+
+    --text:#f8fafc;
+
+    --text2:#b8c2d6;
+
+    --radius:18px;
+
+    --shadow:
+        0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+/*==============================
+ LOADER
+==============================*/
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--bg);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    z-index:9999;
+
+}
+
+.loader-logo{
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    border:3px solid var(--accent);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    animation:pulse 2s infinite;
+
+}
+
+#loader p{
+
+    color:var(--text2);
+
+    letter-spacing:1px;
+
+}
+
+
+/*==============================
+ APP LAYOUT
+==============================*/
+
+#app{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    height:100vh;
+
+}
+
+
+/*==============================
+ SIDEBAR
+==============================*/
+
+#sidebar{
+
+    background:var(--bg2);
+
+    border-right:1px solid var(--line);
+
+    padding:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    margin-bottom:45px;
+
+}
+
+.logo h2{
+
+    font-size:1.5rem;
+
+    color:white;
+
+}
+
+nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+
+/*==============================
+ MENU BUTTONS
+==============================*/
+
+.menu-btn{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:var(--text2);
+
+    padding:15px;
+
+    border-radius:12px;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:.95rem;
+
+}
+
+.menu-btn:hover{
+
+    background:var(--panel);
+
+    color:white;
+
+}
+
+.menu-btn.active{
+
+    background:var(--accent);
+
+    color:white;
+
+}
+
+
+/*==============================
+ MAIN CONTENT
+==============================*/
+
+#main-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+}
